@@ -67,7 +67,7 @@ function rollDice() {
 document.querySelector('.btn-roll').addEventListener('click', rollDice);
 
 document.addEventListener('keypress', function (event) {
-	if (event.keyCode === 32 || event.which === 32) {
+	if (event.keyCode === 82 || event.which === 82) {
 		rollDice();
 	}
 });
@@ -102,7 +102,7 @@ function holdScore() {
 document.querySelector('.btn-hold').addEventListener('click', holdScore);
 
 document.addEventListener('keypress', function (event) {
-	if (event.keyCode === 13 || event.which === 13) {
+	if (event.keyCode === 72 || event.which === 72) {
 		holdScore();
 	}
 });
@@ -122,3 +122,9 @@ function nextPlayer() {
 }
 
 document.querySelector('.btn-new').addEventListener('click', init);
+
+document.addEventListener('keypress', function (event) {
+	if (event.keyCode === 78 || event.which === 78) {
+		init();
+	}
+});
